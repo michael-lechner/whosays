@@ -1,0 +1,24 @@
+extends layout
+
+block buttons
+    li
+        button.btn.navbar-btn.btn-primary.start-game Start Round
+    li
+        button.btn.navbar-btn.btn-primary.new-game New Game
+
+block content
+    .main
+        .row
+            .col-xs-6.sq-0.sq 
+                span.key-display [ W ]
+            .col-xs-6.sq-1.sq 
+                span.key-display [ E ]
+        .row
+            .col-xs-6.sq-2.sq 
+                span.key-display [ N ]
+            .col-xs-6.sq-3.sq 
+                span.key-display [ M ]
+
+block bottom-info
+    .col-xs-4.level round:
+    .col-xs-4.col-sm-offset-1.status.navbar-right

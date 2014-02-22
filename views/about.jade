@@ -1,0 +1,22 @@
+extends layout
+
+block buttons
+    li
+        a(href="/").back-game-link
+            button.btn.navbar-btn.btn-primary.back-game Back to Game
+                    
+block content
+    .container.about-cont
+        .row
+            .col-xs-6
+                h2 Michael Lechner
+                h4.text-muted web development - boulder, co
+                img(src="/images/michael-profile.jpg").profile-pic.img-circle
+            .col-xs-6
+                h2 Build.
+                p 
+                    | this game was a midterm project for
+                    | <a href="http://refactoru.com/">refactoru</a>
+                    | it is hosted on heroku and uses responsive 
+                    | design principles, twitter bootstrap, JQuery, 
+                    | and Node.js with Jade Templating.

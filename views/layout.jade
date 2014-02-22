@@ -1,0 +1,33 @@
+doctype html
+html
+  head
+    title who says?
+    link(rel='stylesheet', href='//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/stylesheets/steez.css')
+    link(href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css')
+  body
+    nav(role="navigation").navbar.navbar-inverse.navbar-static-top
+        .navbar-header
+            button(type="button", data-toggle="collapse", data-target=".navbar-ex1-collapse").navbar-toggle
+                span.sr-only Toggle navigation
+                span.icon-bar
+                span.icon-bar
+                span.icon-bar
+            a(href="/about").navbar-brand.brand who says?
+        .collapse.navbar-collapse.navbar-ex1-collapse
+                ul.nav.navbar-nav.navbar-right
+                    block buttons
+                
+    block content
+
+    nav(role="navigation").navbar.navbar-inverse.navbar-fixed-bottom
+        .container-fluid
+            block bottom-info
+                
+  
+
+  script(src="http://code.jquery.com/jquery-2.0.3.min.js")
+  script(src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js")
+  script(src="javascripts/wad/wad.js")
+  script(src="javascripts/utilities.js")
+  script(src="javascripts/main.js")
