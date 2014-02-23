@@ -219,7 +219,7 @@ $(document).ready(function(){
 	});
 
 	$(document).on('click', '.sq', function(e){
-		e.stopPropagation();
+		// e.stopPropagation();
 		if(isRecording){	
 			if($(this).hasClass('sq-0')){
 					hPlayer.moves.push(new Move(0));
