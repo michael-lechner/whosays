@@ -281,6 +281,19 @@ $(document).ready(function(){
 		updateLevel();
 	})
 
+	$(document).on('mouseover', '.li-icon img', function(){
+		$(this).attr('src', '/images/li-blue.png')
+	})
+
+	$(document).on('mouseout', '.li-icon img', function(){
+		$(this).attr('src', '/images/li-black.png')
+	})
+
+	// $(document).on('mouseout', '.li-icon img', function(){
+	// 	$('.li-icon a').html('');
+	// 	$('.li-icon a').html('<img src="/images/li-black.png">');
+	// })
+
 	updateLevel();
 	$('.status').html('space to start');
 
