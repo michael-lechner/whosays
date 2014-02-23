@@ -84,7 +84,7 @@
 	color: red;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 645px) {
 	.result-display{
 		position: fixed;
 		left: 5%;
