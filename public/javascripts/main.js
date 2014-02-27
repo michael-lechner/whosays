@@ -289,10 +289,13 @@ $(document).ready(function(){
 		$(this).attr('src', '/images/li-black.png')
 	})
 
-	// $(document).on('mouseout', '.li-icon img', function(){
-	// 	$('.li-icon a').html('');
-	// 	$('.li-icon a').html('<img src="/images/li-black.png">');
-	// })
+	$(document).on('mouseover', '.gh-icon img', function(){
+		$(this).attr('src', '/images/github-mark-blue-64px.png')
+	});
+
+	$(document).on('mouseout', '.gh-icon img', function(){
+		$(this).attr('src', '/images/github-mark-black-64px.png')
+	});
 
 	updateLevel();
 	$('.status').html('space to start');
