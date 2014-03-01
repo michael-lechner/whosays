@@ -219,7 +219,7 @@ $(document).ready(function(){
 		}
 	});
 
-	$(document).on('click', '.sq', function(e){
+	$(document).on('click, tap', '.sq', function(e){
 		// e.stopPropagation();
 		if(isRecording){	
 			if($(this).hasClass('sq-0')){
