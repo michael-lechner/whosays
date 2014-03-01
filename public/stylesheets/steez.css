@@ -140,3 +140,19 @@
 	margin-top: 100px;
 }
 
+.top-img{
+	position: absolute;
+}
+
+.glyphicon-envelope{
+	position: absolute;
+	font-size: 50px;
+	margin: 50px 0px 70px 80px;
+	color: rgba(0, 0, 0, 1.0);
+	vertical-align: middle;
+}
+
+.glyphicon-envelope:hover{
+	text-decoration: none;
+	color: rgba(0, 0, 0, 1.0);
+}

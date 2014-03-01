@@ -22,6 +22,7 @@ var timerSpd = 500;
 * end static game constants
 */
 
+var iconAnim = 500;
 
 var timer = null;
 var timeSecs = 3;
@@ -264,7 +265,7 @@ $(document).ready(function(){
 		}
 	});
 
-	$(document).on('click', '.start-game', function(){
+	$(document).on('click, tap', '.start-game', function(){
 			if(!gameInProgress){
 				gameInProgress = true;
 				updateLevel();
@@ -281,22 +282,23 @@ $(document).ready(function(){
 		updateLevel();
 	})
 
-	$(document).on('mouseover', '.li-icon img', function(){
-		$(this).attr('src', '/images/li-blue.png')
-	})
+	$('.li-icon img').hover(function(){
+		$(this).animate({opacity: 0.0}, iconAnim);
+	}, function(){
+		$(this).animate({opacity: 1.0}, iconAnim);
+	});	
 
-	$(document).on('mouseout', '.li-icon img', function(){
-		$(this).attr('src', '/images/li-black.png')
-	})
+	$('.gh-icon img').hover(function(){
+		$(this).animate({opacity: 0.0}, iconAnim);
+	}, function(){
+		$(this).animate({opacity: 1.0}, iconAnim);
+	});	
 
-	$(document).on('mouseover', '.gh-icon img', function(){
-		$(this).attr('src', '/images/github-mark-blue-64px.png')
-	});
-
-	$(document).on('mouseout', '.gh-icon img', function(){
-		$(this).attr('src', '/images/github-mark-black-64px.png')
-	});
-
+	$('.glyphicon-envelope').hover(function(){
+		$(this).animate({color: 'rgba(0, 122, 184, 1.0)'}, iconAnim);
+	}, function(){
+		$(this).animate({color: 'rgba(0, 0, 0, 1.0)'}, iconAnim);;
+	});	
 	updateLevel();
 	$('.status').html('space to start');
 
