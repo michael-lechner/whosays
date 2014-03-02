@@ -241,6 +241,8 @@ $(document).ready(function(){
 			}
 		}else{
 			if(!gameInProgress){
+				var startSound = new Wad({source: 'sine'});
+				startSound.play();
 				gameInProgress = true;
 				updateLevel();
 				startTimer();
