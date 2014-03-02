@@ -160,5 +160,8 @@
 .start-btn{
 	text-align: center;
 	padding: 50px;
-	margin-top: 300px;
+}
+
+.start-lnk:hover{
+	text-decoration: none;
 }
