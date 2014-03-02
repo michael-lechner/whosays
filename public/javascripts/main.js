@@ -34,6 +34,9 @@ var gameInProgress = false;
 var isRecording = false;
 var level = startLevel;
 
+/*for sound in mobile browsers*/
+var isFirstTap = true;
+
 $(document).ready(function(){
 
 	var navHeight = $('.navbar').height();
@@ -241,9 +244,13 @@ $(document).ready(function(){
 			}
 		}else{
 			if(!gameInProgress){
-				var startSound = new Wad({source: 'sine'});
-				startSound.env.hold = 0.1;
-				startSound.play();
+				if(isFirstTap){
+					var startSound = new Wad({source: 'sine'});
+					startSound.env.hold = 0.1;
+					startSound.setVolume(0.01);
+					startSound.play({pitch: 50});
+					isFirstTap = false;
+				}
 				gameInProgress = true;
 				updateLevel();
 				startTimer();
