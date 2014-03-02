@@ -242,7 +242,7 @@ $(document).ready(function(){
 		}else{
 			if(!gameInProgress){
 				var startSound = new Wad({source: 'sine'});
-				startSound.sound.env.hold = 0.1;
+				startSound.env.hold = 0.1;
 				startSound.play();
 				gameInProgress = true;
 				updateLevel();
