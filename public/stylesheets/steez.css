@@ -156,3 +156,9 @@
 	text-decoration: none;
 	color: rgba(0, 0, 0, 1.0);
 }
+
+.start-btn{
+	text-align: center;
+	padding: 50px;
+	margin-top: 300px;
+}

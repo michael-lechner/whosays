@@ -265,6 +265,11 @@ $(document).ready(function(){
 		}
 	});
 
+	$(document).on('click, tap', '.start-btn', function(){
+		var startSound = new Wad({source: 'sine'});
+		startSound.play();
+	});
+
 	$(document).on('click, tap', '.start-game', function(){
 			if(!gameInProgress){
 				gameInProgress = true;

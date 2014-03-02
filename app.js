@@ -26,7 +26,8 @@ if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
-app.get('/', mainController.game);
+app.get('/', mainController.touchStart);
+app.get('/game', mainController.game);
 app.get('/about', mainController.about);
 
 http.createServer(app).listen(app.get('port'), function(){
