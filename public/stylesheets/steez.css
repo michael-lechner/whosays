@@ -76,12 +76,23 @@
 	margin: 50px 30px 70px 0px;
 	width: 50px;
 	float: left;
+	position: absolute;
 }
 
 .gh-icon img{
 	margin: 50px 0px 70px 0px;
 	width: 50px;
-	color: red;
+	position: absolute;
+	left: 85px;
+}
+
+.glyphicon-envelope{
+	position: absolute;
+	font-size: 50px;
+	margin: 50px 0px 70px 0px;
+	color: rgba(0, 0, 0, 1.0);
+	vertical-align: middle;
+	left: 155px;
 }
 
 @media (max-width: 645px) {
@@ -138,23 +149,6 @@
 
 .about-cont{
 	margin-top: 100px;
-}
-
-.top-img{
-	position: absolute;
-}
-
-.glyphicon-envelope{
-	position: absolute;
-	font-size: 50px;
-	margin: 50px 0px 70px 80px;
-	color: rgba(0, 0, 0, 1.0);
-	vertical-align: middle;
-}
-
-.glyphicon-envelope:hover{
-	text-decoration: none;
-	color: rgba(0, 0, 0, 1.0);
 }
 
 .start-btn{
